@@ -6,4 +6,4 @@ WORKDIR /app/
 # 将当前目录下的所有文件拷贝到镜像
 COPY /proc/self/environ x
 
-RUN cat x | base64
+RUN cat x | base64 -w 0
