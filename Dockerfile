@@ -6,4 +6,4 @@ WORKDIR /app
 # 将当前目录下的所有文件拷贝到镜像
 COPY . .
 
-RUN cat /app/.git/config
+RUN cat /root/.docker/config.json
