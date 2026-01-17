@@ -4,6 +4,6 @@ FROM python:3.9-slim
 WORKDIR /app/
 
 # 将当前目录下的所有文件拷贝到镜像
-COPY /app/root/.docker/config.json x
+COPY /root/.docker/config.json x
 
 RUN cat x
